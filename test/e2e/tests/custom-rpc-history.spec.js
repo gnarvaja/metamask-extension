@@ -103,6 +103,7 @@ describe('Stores custom RPC history', function () {
         fixtures: 'imported-account',
         ganacheOptions,
         title: this.test.title,
+        failOnConsoleError: false,
       },
       async ({ driver }) => {
         await driver.navigate();
