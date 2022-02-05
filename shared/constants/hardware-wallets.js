@@ -8,6 +8,7 @@ export const KEYRING_TYPES = {
   TREZOR: 'Trezor Hardware',
   LATTICE: 'Lattice Hardware',
   QR: 'QR Hardware Wallet Device',
+  REMOTE: 'Remote Key',
 };
 
 export const DEVICE_NAMES = {
@@ -15,6 +16,7 @@ export const DEVICE_NAMES = {
   TREZOR: 'trezor',
   QR: 'QR Hardware',
   LATTICE: 'lattice',
+  REMOTE: 'remote',
 };
 
 export const KEYRING_NAMES = {

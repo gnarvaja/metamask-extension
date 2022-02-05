@@ -16,6 +16,7 @@ import log from 'loglevel';
 import TrezorKeyring from 'eth-trezor-keyring';
 import LedgerBridgeKeyring from '@metamask/eth-ledger-bridge-keyring';
 import LatticeKeyring from 'eth-lattice-keyring';
+import RemoteKeyring from 'eth-remote-keyring';
 import { MetaMaskKeyring as QRHardwareKeyring } from '@keystonehq/metamask-airgapped-keyring';
 import EthQuery from 'eth-query';
 import nanoid from 'nanoid';
@@ -1819,6 +1820,9 @@ export default class MetamaskController extends EventEmitter {
         break;
       case DEVICE_NAMES.LATTICE:
         keyringName = LatticeKeyring.type;
+        break;
+      case DEVICE_NAMES.REMOTE:
+        keyringName = RemoteKeyring.type;
         break;
       default:
         throw new Error(

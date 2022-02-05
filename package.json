@@ -149,6 +149,7 @@
     "eth-lattice-keyring": "^0.4.0",
     "eth-method-registry": "^2.0.0",
     "eth-query": "^2.1.2",
+    "eth-remote-keyring": "https://github.com/gnarvaja/eth-remote-keyring",
     "eth-rpc-errors": "^4.0.2",
     "eth-sig-util": "^3.0.0",
     "eth-trezor-keyring": "^0.9.1",
