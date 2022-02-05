@@ -86,6 +86,23 @@ export default class SelectHardware extends Component {
     );
   }
 
+  renderConnectToRemoteButton() {
+    return (
+      <button
+        className={classnames('hw-connect__btn', {
+          selected: this.state.selectedDevice === DEVICE_NAMES.REMOTE,
+        })}
+        onClick={(_) => this.setState({ selectedDevice: DEVICE_NAMES.REMOTE })}
+      >
+        <img
+          className="hw-connect__btn__img"
+          src="images/qrcode-wallet-logo.svg"
+          alt="Remote"
+        />
+      </button>
+    );
+  }
+
   renderButtons() {
     return (
       <>
@@ -99,6 +116,12 @@ export default class SelectHardware extends Component {
         >
           {this.renderConnectToLatticeButton()}
           {this.renderConnectToQRButton()}
+        </div>
+        <div
+          className="hw-connect__btn-wrapper"
+          style={{ margin: '10px 0 0 0' }}
+        >
+          {this.renderConnectToRemoteButton()}
         </div>
       </>
     );

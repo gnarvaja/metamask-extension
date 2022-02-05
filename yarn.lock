@@ -11196,6 +11196,14 @@ eth-query@^2.1.0, eth-query@^2.1.2:
     json-rpc-random-id "^1.0.0"
     xtend "^4.0.1"
 
+"eth-remote-keyring@https://github.com/gnarvaja/eth-remote-keyring":
+  version "0.1.0"
+  resolved "https://github.com/gnarvaja/eth-remote-keyring#f907bf4c665afa6ac72e18d2c755b252fde9d8fc"
+  dependencies:
+    "@metamask/eth-sig-util" "^4.0.0"
+    ethereumjs-util "^7.0.9"
+    randombytes "^2.1.0"
+
 eth-rpc-errors@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/eth-rpc-errors/-/eth-rpc-errors-3.0.0.tgz#d7b22653c70dbf9defd4ef490fd08fe70608ca10"
