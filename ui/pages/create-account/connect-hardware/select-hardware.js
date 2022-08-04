@@ -103,6 +103,23 @@ export default class SelectHardware extends Component {
     );
   }
 
+  renderConnectToRemoteButton() {
+    return (
+      <button
+        className={classnames('hw-connect__btn', {
+          selected: this.state.selectedDevice === DEVICE_NAMES.REMOTE,
+        })}
+        onClick={(_) => this.setState({ selectedDevice: DEVICE_NAMES.REMOTE })}
+      >
+        <img
+          className="hw-connect__btn__img"
+          src="images/qrcode-wallet-logo.svg"
+          alt="Remote"
+        />
+      </button>
+    );
+  }
+
   renderButtons() {
     return (
       <>
